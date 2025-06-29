@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cafe items</title>
+</head>
+<body>
+    <form  method="post" >
+        {% csrf_token %}
+        <label for="tea">Select your tea</label><br>
+        <input type="text" name="tea" id="tea" placeholder="tea"><br>
+        <label for="coffee">Enter the coffee</label><br>
+        <input type="text" name="coffee" id="coffee" placeholder="coffee"><br>
+        <label for="snaks">Enter the snaks</label><br>
+        <input type="text" name="snaks" id="snaks" placeholder="snaks"><br>
+        <label for="juice">Enter the juice</label><br>
+        <input type="text" name="juice" id="juice" placeholder="juice"><br>
+        <input type="submit" value="ok">
+    </form>
+</body>
+</html>

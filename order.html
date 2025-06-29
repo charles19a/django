@@ -1,0 +1,27 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/order.css' %}">
+    <title>Document</title>
+</head>
+<body>
+    <h1>order details</h1>
+    <div>
+    <form method="post">
+        {% csrf_token %}
+        <label for="csname">customer name</label><br>
+        <input type="text" name="csname" id="oname"><br>
+        <label for="product">product</label><br>
+        <input type="text" name="product" id="pro"><br>
+        <label for="price">price</label><br>
+        <input type="text" name="price" id="price"><br>
+        <label for="add">address</label><br>
+        <input type="text" name="add" id="add"><br>
+        <button type="submit">click here</button>
+    </form>
+    </div>
+</body>
+</html>
